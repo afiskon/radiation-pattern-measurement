@@ -7,7 +7,7 @@ import csv
 
 xs = []
 ys = []
-with open('raw-data.csv', newline = '') as f:
+with open('data/raw-data.csv', newline = '') as f:
     for row in csv.reader(f, delimiter = ',', quotechar = '"'):
         xs += [ 2*pi*float(row[0])/360 ]
         ys += [ float(row[1]) ]
